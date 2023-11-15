@@ -5,42 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OZ</title>
     <link rel="stylesheet" href="./styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="bg-container">
             <div class="welcome-banner">
-                <span id="welcome">WELCOME TO OZ</span>
+                <div class="welcome">
+                    <svg id="oz" width="139" height="231" viewBox="0 0 278 462" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M55 240H220.5L266 461.5H12L55 240Z" fill="#C6397D"/>
+                        <line x1="87" y1="287" x2="188" y2="287" stroke="white" stroke-width="10"/>
+                        <line x1="67" y1="404" x2="200" y2="404" stroke="white" stroke-width="10"/>
+                        <line x1="67.4797" y1="404.449" x2="184.48" y2="288.449" stroke="white" stroke-width="10"/>
+                        <circle cx="74.5" cy="400.5" r="13" fill="white" stroke="#C6397D"/>
+                        <circle cx="180.5" cy="286.5" r="13" fill="white" stroke="#C6397D"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M139 278C215.768 278 278 215.768 278 139C278 62.2324 215.768 0 139 0C62.2324 0 0 62.2324 0 139C0 215.768 62.2324 278 139 278ZM139 236C192.572 236 236 192.572 236 139C236 85.4284 192.572 42 139 42C85.4284 42 42 85.4284 42 139C42 192.572 85.4284 236 139 236Z" fill="#C6397D"/>
+                        </svg>  
+                    <div id="welcome-text">Welcome to OZ</div>
+                </div>
             </div>
-            <div class="footer">Photo by X on Unsplash</div>
+            <div class="footer">Photo by juliao-sodre"wolf73" on ArtStation</div>
         </div>
         <div class="form-container">
-            <div class="tagline">Your gateway to other worlds</div>
-            <div class="instructions">Please complete the registration form below to get started in minutes.</div>
-            <form action="/" method="post">
-                <h1>Create an account</h1>
-                <div class="form-row">
-                    <label for="first_name">First name</label>
-                    <input type="text" id="first_name" name="first_name" placeholder="First" minlength=2/>
-                    <label for="last_name">Last name</label>
-                    <input type="text" id="last_name" name="last_name" placeholder="Last" minlength=2/>
-                </div>
-                <div class="form-row">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email address" />
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone number" />
-                </div>
-                <div class="form-row">
-                    <label for="pw">Password</label>
-                    <input type="password" id="pw" name="pw" placeholder="Enter Password" />
-                    <label for="confirm_pw">Confirm Password</label>
-                    <input type="password" id="confirm_pw" name="confirm_pw" placeholder="Confirm your password" />
-                </div>
-                <button type="submit">Create your account</button>
-            </form>
-            <div class="login-text">Already have an account? Click here to log in.</div>
+            <div class="form-wrapper">
+                <div class="tagline">Don't wait around for the future. Be a part of it.</div>
+                <div class="instructions">Unleash your creativity and unlock the worlds that lives in your head. Create an account below to get started.</div>
+                <form action="" method="post" class="no-validate">
+                    <h1>Create an account</h1>
+                    <h5>Required fields are indicated with *</h5>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="first_name">First name*</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="First" minlength=2 required/>
+                        </div>
+                        <div class="form-field">
+                            <label for="last_name">Last name*</label>
+                            <input type="text" id="last_name" name="last_name" placeholder="Last" minlength=2 required/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" placeholder="Email address" required/>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone number" minlength=8/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="pw">Password*</label>
+                            <input type="password" id="pw" name="pw" placeholder="Enter Password" minlength=8 required/>
+                        </div>
+                        <div class="form-field">
+                            <label for="confirm_pw">Confirm Password*</label>
+                            <input type="password" id="confirm_pw" name="confirm_pw" placeholder="Confirm your password" minlength=8 required/>
+                        </div>
+                    </div>
+                    <div id="submit">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="login-text">Already have an account? <a href="">Click here to log in.</a></div>
         </div>
     </div>  
+    <script src="script.js"></script>
 </body>
 </html>

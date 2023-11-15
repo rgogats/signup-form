@@ -2,6 +2,11 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    margin: 0;
 }
 
 body {
@@ -19,7 +24,7 @@ body {
 
 .bg-container {
     width: 30%;
-    background-image: url(assets/doorbanner.jpg);
+    background-image: url(assets/psi-fi-noisy.jpeg);
     background-position-x: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,12 +45,27 @@ body {
     height: 15%;
 }
 
-#welcome {
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2.5rem;
+#oz {
+    margin: auto;
+    width: 100%;
+}
+
+.welcome {
     background-color: rgba(0,0,0,0.4);
     padding: 40px 0px 40px 0px;
+}
+
+#welcome-text {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.footer {
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
 }
 
 .form-container {
@@ -55,15 +75,78 @@ body {
     justify-content:center;
     height: 100%;
     padding: 0 auto;
-    background-color: #fede9f;
+    background-color: #efefef;
+}
+
+.tagline, .instructions {
+    padding: 20px;
+}
+
+.tagline {
+    font-size: 2.5rem;
+    width: 100%;
+    background-color: rgb(222, 149, 40);
+    border-top: 2px solid rgba(0,0,0,0.7);
+    border-bottom: 2px solid rgba(0,0,0,0.7);
+    font-family: 'Karla';
+    color: white;
+    box-shadow: #000000;
 }
 
 form {
     text-align: left;
+    background-color: #fff;
+    padding: 1.5rem;
+    font-family: 'Karla', sans-serif;
 }
 
 .form-row {
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+button[type="submit"] {
+    background-color: #185c76;
+    width: 20%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: 'Karla', sans-serif;
+    border-radius: 3px;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #c4c4c4;
+}
+
+.no-validate input:invalid {
+    border: 1px solid #c4c4c4;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid #185c76;
+    box-shadow: 2px 2px 8px rgb(200, 200, 200);
+}
+
+.login-text {
+    padding: 20px 0px 0px 20px;
 }
