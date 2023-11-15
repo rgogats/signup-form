@@ -1,1 +1,46 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OZ</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-container">
+            <div class="welcome-banner">
+                <span id="welcome">WELCOME TO OZ</span>
+            </div>
+            <div class="footer">Photo by X on Unsplash</div>
+        </div>
+        <div class="form-container">
+            <div class="tagline">Your gateway to other worlds</div>
+            <div class="instructions">Please complete the registration form below to get started in minutes.</div>
+            <form action="/" method="post">
+                <h1>Create an account</h1>
+                <div class="form-row">
+                    <label for="first_name">First name</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="First" minlength=2/>
+                    <label for="last_name">Last name</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Last" minlength=2/>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email address" />
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number" />
+                </div>
+                <div class="form-row">
+                    <label for="pw">Password</label>
+                    <input type="password" id="pw" name="pw" placeholder="Enter Password" />
+                    <label for="confirm_pw">Confirm Password</label>
+                    <input type="password" id="confirm_pw" name="confirm_pw" placeholder="Confirm your password" />
+                </div>
+                <button type="submit">Create your account</button>
+            </form>
+            <div class="login-text">Already have an account? Click here to log in.</div>
+        </div>
+    </div>  
+</body>
+</html>
